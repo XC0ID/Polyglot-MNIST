@@ -1,0 +1,43 @@
+# ── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.ruff_cache/
+
+# ── Virtual environments ──────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Data — keep structure, ignore large binary files ─────────────────────
+data/raw/images/         # ~31 k PNG images — do NOT commit
+data/raw/*.zip
+data/processed/*.pt      # model checkpoints (large)
+
+# If you want to track small processed artefacts, add exceptions:
+# !data/processed/metrics.json
+# !data/processed/classification_report.txt
+
+# ── OS / editor ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Misc ──────────────────────────────────────────────────────────────────
+*.log
