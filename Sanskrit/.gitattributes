@@ -1,0 +1,15 @@
+# Auto-detect line endings
+* text=auto
+
+# Python
+*.py text eol=lf
+
+# Docs
+*.md  text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+
+# Binary
+*.png binary
+*.pt  binary
+*.zip binary
