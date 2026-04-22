@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""
-train.py — Entry point for training the Sanskrit MNIST CNN.
-
-Usage:
-    python train.py                          # default settings
-    python train.py --epochs 30 --lr 5e-4   # custom hyper-params
-    python train.py --help                   # show all options
-
-Outputs saved to:
-    data/processed/metrics.json
-    data/processed/best_model.pt
-    data/processed/training_curves.png
-"""
-
 import argparse
 import time
 from pathlib import Path
