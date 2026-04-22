@@ -1,17 +1,3 @@
-#!/usr/bin/env python3
-"""
-evaluate.py — Full evaluation of a trained Sanskrit MNIST model.
-
-Usage:
-    python evaluate.py                              # uses default paths
-    python evaluate.py --checkpoint path/to/model.pt
-
-Outputs:
-    data/processed/confusion_matrix.png
-    data/processed/sample_predictions.png
-    data/processed/classification_report.txt
-"""
-
 import argparse
 import sys
 from pathlib import Path
