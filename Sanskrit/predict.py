@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""
-predict.py — Single-image (or batch) inference for a trained model.
-
-Usage:
-    python predict.py --image path/to/image.png
-    python predict.py --image path/to/image.png --top-k 5
-    python predict.py --image path/to/image.png --checkpoint data/processed/best_model.pt
-"""
-
 import argparse
 import sys
 from pathlib import Path
@@ -35,7 +25,7 @@ _INFER_TRANSFORM = transforms.Compose([
 
 def parse_args():
     p = argparse.ArgumentParser(description="Sanskrit MNIST single-image predictor")
-    p.add_argument("--image",      required=True, help="Path to the input image")
+    p.add_argument("--image",      default="data/raw/images/00_a/00_0000.png", help="Path to the input image")
     p.add_argument("--checkpoint", default="data/processed/best_model.pt")
     p.add_argument("--label-map",  default="data/raw/label_map.csv")
     p.add_argument("--top-k",      type=int, default=3, help="Show top-K predictions")
